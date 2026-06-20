@@ -8,6 +8,11 @@ The goal of this project was to use descriptors to categorise a compound as eith
 
 The positives of Full Heusler and Half Heusler compound dataset were generated using matminer, a **Python library for data mining the properties of materials** by Hacking Materials Group. I used their `heusler_magnetic` dataset to get both Full Heusler and Half Heusler formulas. The negatives were extracted using the AFLOW API.
 
+## Packages
+- matminer: to access heusler_magnetic dataset.
+- pymatgen: to parse formulae and get elemental information
+- sklearn: to perform all the machine learning based model development including data preprocessing.
+
 ## Model
 
 The classification models were developed using the **Random Forest (RF)** algorithm and evaluated using **20-fold cross-validation** to assess their predictive performance.
